@@ -132,17 +132,9 @@ entry/src/main/ets/common/WeatherService.ets
 3. 确认页面展示当前温度、天气描述、湿度、风速及未来天气列表
 4. 可尝试输入错误城市名或断网状态，验证异常提示是否正常显示
 
-## 七、华为云码道（CodeArts）流水线说明
 
-按课程要求，作业需通过华为云码道（CodeArts）完成构建/检查并提交至课程组织仓库，建议流程：
 
-1. 登录 [华为云 CodeArts](https://www.huaweicloud.com/product/codearts.html)，创建项目并关联本 GitHub 仓库（或镖仓库镶像同步）
-2. 在 CodeArts Pipeline 中新建流水线，选择 HarmonyOS 应用构建模板（或自定义构建任务，执行 `hvigorw assembleHap` 完成 HAP 包构建校验）
-3. 确认最终代码已提交并合并至 `https://github.com/OSSD-Course-SYSU-2` 对应仓库
-
-> 此部分具体操作需在你本人的华为云账号环境下完成，本文档仅提供流程框架。
-
-## 八、常见问题 FAQ
+## 常见问题 FAQ
 
 | 问题 | 排查建议 |
 | --- | --- |
@@ -151,7 +143,7 @@ entry/src/main/ets/common/WeatherService.ets
 | 真机无法安装 | 确认已完成签名配置，且华为账号已完成开发者实名认证 |
 | 中文城市名查询失败 | 接口对中文支持有限，建议优先使用英文/拼音城市名（如 `Guangzhou` 而非"广州"） |
 
-## 九、项目局限与后续优化方向
+##项目局限与后续优化方向
 
 - 当前版本聚焦核心查询功能，尚未实现 HarmonyOS 分布式"自由流转"（跨设备无缝迁移）能力，可作为后续扩展方向
 - 天气数据源为公共接口，无 SLA 保障，生产环境建议替换为正式天气服务商 API
